@@ -1,0 +1,357 @@
+@font-face {
+  font-family: myF;
+  src: url("/Contaur.woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: black;
+  text-align: center;
+}
+
+canvas {
+  display: block;
+}
+
+#color {
+  color: #bbb;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 1.2em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.name {
+  /* background-color: white; */
+  background: linear-gradient(to right, #024914 10%, #01550c 50%, #57d75b 60%);
+  animation: textclip 1.5s linear infinite;
+  position: absolute;
+  font-family: serif;
+  font-size: 1200%;
+  top: 25%;
+  font-weight: bold;
+  color: black;
+  mix-blend-mode: screen;
+  opacity: 0.9;
+  padding-left: 25%;
+  padding-right: 24.646809576%;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+/* .time-f{
+    color: aqua;
+    top: 44% ;
+    position: absolute;
+    right: 45%;
+    font-size: 1000%;
+    font-family: myF;
+    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+}
+#time-suf{
+    color: white;
+    top: 48% ;
+    position: absolute;
+    right: 39%;
+    color: aqua;
+    font-size: 400%;
+    text-shadow: 1px 1px 2px rgb(45, 2, 51), 0 0 1em rgb(51, 255, 0), 0 0 0.2em rgb(217, 255, 3);
+} */
+
+/*blinks*/
+.sign {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 10%;
+  background-image: radial-gradient(
+    ellipse 50% 35% at 50% 50%,
+    #186b23,
+    transparent
+  );
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 75%;
+  top: 90%;
+  font-family: "Clip";
+  text-transform: uppercase;
+  font-size: 4em;
+  color: #e6ffe9;
+  text-shadow: 0 0 0.6rem #edffe6, 0 0 1.5rem #7fff65,
+    -0.2rem 0.1rem 1rem #65ff72, 0.2rem 0.1rem 1rem #65ff6d,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  animation: shine 2s forwards, flicker 3s infinite;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #e6ffeb;
+    text-shadow: 0 0 0.6rem #b4f8a4, 0 0 1.5rem #91ff65,
+      -0.2rem 0.1rem 1rem #05f725, 0.2rem 0.1rem 1rem #96ff65,
+      0 -0.5rem 2rem #48ff24, 0 0.5rem 3rem #24ff41;
+  }
+  28%,
+  33% {
+    color: #65ff7a;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #24ff2f;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #186b26;
+    text-shadow: none;
+  }
+  100% {
+    color: #e6ffeb;
+    text-shadow: 0 0 0.6rem #e6ffe6, 0 0 1.5rem #65ff86,
+      -0.2rem 0.1rem 1rem #65ff7a, 0.2rem 0.1rem 1rem #7fff65,
+      0 -0.5rem 2rem #3eff24, 0 0.5rem 3rem #24ff24;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/*created by */
+.glch {
+  position: absolute;
+  color: white;
+  font-size: 400%;
+  top: 80%;
+  right: 34%;
+  animation: glitch 1s linear infinite;
+  text-shadow: 0.2rem 0.1rem 1rem #65ff6d;
+}
+
+@keyframes glitch {
+  2%,
+  64% {
+    transform: translate(2px, 0) skew(0deg);
+    -webkit-transform: translate(2px, 0) skew(0deg);
+    -moz-transform: translate(2px, 0) skew(0deg);
+    -ms-transform: translate(2px, 0) skew(0deg);
+    -o-transform: translate(2px, 0) skew(0deg);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
+
+/* .glch:before,
+.glch:after {
+  content: attr(title);
+  position: absolute;
+  left: 0;
+} */
+
+.glch:before {
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop {
+  2%,
+  64% {
+    transform: translate(2px, -2px);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  62% {
+    transform: translate(13px, -1px) skew(-13deg);
+  }
+}
+
+.glch:after {
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom {
+  2%,
+  64% {
+    transform: translate(-2px, 0);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0);
+  }
+  62% {
+    transform: translate(-22px, 5px) skew(21deg);
+  }
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .text {
+    font-weight: 100;
+    color: #2cf35e;
+  }
+  .dud {
+    color: #14ff33;
+  }
