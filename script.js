@@ -104,30 +104,30 @@ function hexToRgb(hex) {
   } : null;
 }
 
-timer();
+// timer();
 
-function timer(){
- var currentTime = new Date()
-var hours = currentTime.getHours()
-var minutes = currentTime.getMinutes()
-var sec = currentTime.getSeconds()
-if (minutes < 10){
-    minutes = "0" + minutes
-}
-if (sec < 10){
-    sec = "0" + sec
-}
-var t_str = hours + ":" + minutes + ":" + sec + " ";
-var suf = "";
-if(hours > 11){
-    suf= "PM";
-} else {
-   suf= "AM";
-}
- document.getElementById('time').innerHTML = t_str;
- document.getElementById('time-suf').innerHTML = suf;
- setTimeout(timer,1000);
-}
+// function timer(){
+//  var currentTime = new Date()
+// var hours = currentTime.getHours()
+// var minutes = currentTime.getMinutes()
+// var sec = currentTime.getSeconds()
+// if (minutes < 10){
+//     minutes = "0" + minutes
+// }
+// if (sec < 10){
+//     sec = "0" + sec
+// }
+// var t_str = hours + ":" + minutes + ":" + sec + " ";
+// var suf = "";
+// if(hours > 11){
+//     suf= "PM";
+// } else {
+//    suf= "AM";
+// }
+//  document.getElementById('time2').innerHTML = t_str;
+//  document.getElementById('time-suf').innerHTML = suf;
+//  setTimeout(timer,1000);
+// }
 
 
 // ——————————————————————————————————————————————————
