@@ -31,6 +31,7 @@ canvas {
   /*background: linear-gradient(to right, #024914 10%, #01550c 50%, #57d75b 60%); */
   animation: textclip 1.5s linear infinite;
   position: absolute;
+  z-index: 9;
   font-family: serif;
   font-size: 1200%;
   top: 25%;
@@ -72,6 +73,7 @@ canvas {
 /*blinks*/
 .sign {
   position: absolute;
+  z-index: 9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -272,6 +274,7 @@ canvas {
 /*created by */
 .glch {
   position: absolute;
+  z-index: 9;
   color: white;
   font-size: 400%;
   top: 80%;
