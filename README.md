@@ -4,3 +4,7 @@ Matrix like animation using HTML5 Canvas. Inspired from [sample code](http://the
 See it in action @ http://parambirs.github.io/matrix
 
 @ 2020-09-05 - added lively customizable options (rainbow / color select) - khuong
+
+
+
+tHIS site is live at https://bc-th3-gr8.github.io/testok/
